@@ -1,0 +1,41 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
+
+---
+
+<div id="awards" class="cv_item">
+    <h4 class="title_decoration">受賞歴</h4>
+    <div id="award_content">
+        <ul class="award_items">
+            <li>
+            </li>
+        </ul>
+
+        準備中
+    </div>
+
+</div>
+
+<style>
+ .award_items {
+     position: relative;
+     left: -1em;
+ }
+ .award_items > li {
+     list-style-type: none; /*点を非表示*/
+     position: relative; /*基準位置*/
+     padding-left: 1em;
+ }
+ .award_items > li:before {
+     border-radius: 50%; /*丸くする*/
+     width: 5px; /*点の幅*/
+     height: 5px; /*点の高さ*/
+     display: block;
+     position: absolute; /*絶対配置*/
+     left: 0; /*点の位置*/
+     top: 0.6em; /*点の位置*/
+     content: "";
+     background: #1ec4e6; /*点の色*/
+ }
+
+</style>

@@ -1,0 +1,41 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../../consts';
+
+---
+
+<h1 class="myname">
+    <span class="kanji_name">油谷 知岐</span>
+    <!-- <span class="hiragana_name">（あぶらたに ともき）</span> -->
+</h1> 
+<div id="name_and_picture_area">
+    <img class="own_picture" src={SUBDIR_ADAPTIVE_URL("images/aburatanitomoki-pict.png")} />
+    <section class="basic_info">
+        <p>大阪府立大学大学院 人間社会システム科学研究科<br />現代システム科学専攻 知識情報システム学分野<br />博士後期課程</p>
+    </section>
+</div>
+
+<style>
+ #name_and_picture_area {
+     display: flex;
+     margin-bottom: 2em;
+ }
+ .own_picture {
+     width: 100px;
+     height: 100%;
+ }
+ .myname {
+     font-family: 'Atkinson', sans-serif;
+     color: #191970;
+ }
+ .kanji_name {
+     font-size: 1em;
+ }
+ .hiragana_name {
+     font-size: 0.6em;
+ }
+ .basic_info {
+     margin-top: -0.8em;
+     margin-left: 1em;
+ }
+
+</style>

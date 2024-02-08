@@ -17,7 +17,8 @@ export default defineConfig({
     server: {
         host: true,
     },
-    base: '/CV/',
+    /* base: '/CV/', */
+    base: '/',
     vite: {
         resolve: {
             alias: {
