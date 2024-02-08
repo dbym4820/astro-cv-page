@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian-buster
+    runs-on: debian-latest
 
     steps:
           - name: Deploy
