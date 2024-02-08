@@ -1,7 +1,7 @@
 ---
 title: 'olive'
 description: 'プレゼン設計課題によるメタ学習支援システム'
-heroImage: '/images/product-images/research-products/01-olive/olive.png'
+heroImage: 'images/product-images/research-products/01-olive/olive.png'
 productType: 'research'
 systemUrl: 'https://dbym4820.org/olive/'
 ---

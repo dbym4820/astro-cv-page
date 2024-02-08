@@ -3,3 +3,7 @@
 
 export const SITE_TITLE = '油谷 知岐（Tomoki Aburatani）';
 export const SITE_DESCRIPTION = '油谷知岐のCV';
+
+export const SUBDIR_ADAPTIVE_URL = (url) => {
+    return import.meta.env.BASE_URL+url;
+}

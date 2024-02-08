@@ -1,7 +1,7 @@
 ---
 title: 'spm3-server'
 description: 'プレゼン設計課題によるメタ学習支援システムのサーバーサイドRest API'
-heroImage: '/images/product-images/research-products/02-spm3-server/spm3-server.png'
+heroImage: 'images/product-images/research-products/02-spm3-server/spm3-server.png'
 productType: 'research'
 systemUrl: 'https://dbym4820.org/spm3-server/'
 ---

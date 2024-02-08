@@ -5,6 +5,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const { title, description, productType, systemUrl, heroImage } = Astro.props;
+
+import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
+
 ---
 
 <html lang="ja">
@@ -70,7 +73,7 @@ const { title, description, productType, systemUrl, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width={510} height={255} src={heroImage} alt="" />}
+					{heroImage && <img width={510} height={255} src={SUBDIR_ADAPTIVE_URL(heroImage)} alt="" />}
 				</div>
 				<div class="prose">
 					<div class="title">

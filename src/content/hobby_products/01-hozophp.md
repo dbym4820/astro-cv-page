@@ -1,7 +1,7 @@
 ---
 title: 'HozoPHP'
 description: '法造データのJSONコンバータ兼APIライブラリ'
-heroImage: '/images/product-images/hobby-products/01-hozophp/hozophp.png'
+heroImage: 'images/product-images/hobby-products/01-hozophp/hozophp.png'
 productType: 'hobby'
 systemUrl: 'https://dbym4820.org/hozophp/'
 ---

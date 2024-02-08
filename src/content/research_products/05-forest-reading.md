@@ -1,7 +1,7 @@
 ---
 title: 'forest-reading'
 description: 'forestを基盤とした批判的論文読解支援システム'
-heroImage: '/images/product-images/research-products/05-forest-reading/forest-reading.png'
+heroImage: 'images/product-images/research-products/05-forest-reading/forest-reading.png'
 productType: 'research'
 systemUrl: 'https://dbym4820.org/forest-reading/'
 ---
