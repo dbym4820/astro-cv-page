@@ -18,20 +18,6 @@ export default defineConfig({
         host: true,
     },
     base: '/CV/',
-    routes: [
-        {
-            // ルートパスの設定
-            path: '/CV/',
-            // ページコンポーネントの設定
-            component: './src/pages/index.astro'
-        },
-        {
-            // プロダクトページのパスの設定
-            path: '/CV/products/',
-            // ページコンポーネントの設定
-            component: './src/pages/products/index.astro'
-        },
-    ],
     vite: {
         resolve: {
             alias: {
