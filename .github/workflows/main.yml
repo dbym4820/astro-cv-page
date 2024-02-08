@@ -1,4 +1,4 @@
-name: CI
+name: CV Deploy CI
 
 on:
   push:
@@ -19,4 +19,4 @@ jobs:
               key: ${{ secrets.DEPLOY_KEY }}
               script: |
                 cd ${{ secrets.DEPLOY_DIR }}
-                sudo git pull origin main
+                git pull origin main
