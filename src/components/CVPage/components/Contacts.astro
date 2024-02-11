@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
 
+import BackToTop from './BackToTop.astro';
 ---
 
 <div id="contacts" class="cv_item">
@@ -12,8 +13,9 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
         <li class="contact_item_line">
             <span class="line_before">Email（個人）：</span><span class="line_after">aburatanitomoki [at] gmail.com</span>
         </li>
-
     </ul>
+
+    <BackToTop />
 </div>
 
 <style>
@@ -38,5 +40,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
  .contact_item_line > .line_before {
      flex: 0 0 6.5em;
  }
+
 
 </style>
