@@ -4,24 +4,167 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
 ---
 
 <div id="profiles" class="cv_item">
-    <h4 class="title_decoration profiles">プロフィール</h4>
+    <h4 class="title_decoration">プロフィール</h4>
     <div id="profile_content">
-        <div id="job_history">
+
+        <div id="basic_profiles" class="line_table_container">
+            <!-- 基本プロフィール -->
+            <div class="line_content_container"><span class="line_before">名前</span><span class="line_after">油谷 知岐  （Tomoki Aburatani）</span></div>
+            <div class="line_content_container"><span class="line_before">学位</span><span class="line_after">修士（情報学）</span></div>
+            <div class="line_content_container"><span class="line_before">所属</span><span class="line_after">大阪府立大学大学院 人間社会システム科学研究科 現代システム科学専攻 知識情報システム学分野 博士後期課程</span></div>
+        </div>
+
+        <div id="job_history" class="line_table_container">
             <!-- 職歴 -->
+            <div class="line_content_container history_container">
+                <span class="line_before">職歴</span>
+                <div class="history_table">
+                    <!-- 上から順に新しいものを入れる -->
+                    <div class='histroy_item'>
+                        <span class="line_before">2024-04 ~ 現在</span>
+                        <span class="line_after">＊＊大学 ＊＊＊＊＊＊＊＊＊＊＊ ＊＊＊＊＊＊センター ＊＊</span>
+                    </div>
+
+                    <div class='histroy_item'>
+                        <span class="line_before">2022-08 ~ 2024-03</span>
+                        <span class="line_after">大阪公立大学 研究員C</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="education_history">
+
+        <div id="education_history" class="line_table_container">
             <!-- 学歴 -->
+            <div class="line_content_container history_container">
+                <span class="line_before">学歴</span>
+                <div class="history_table">
+                    <!-- 上から順に新しいものを入れる -->
+                    <div class='histroy_item'>
+                        <span class="line_before">2019-04 ~ 2024-03</span>
+                        <span class="line_after">大阪府立大学大学院 人間社会システム科学研究科 現代システム科学専攻 知識情報システム学分野 博士後期課程</span>
+                    </div>
+                    <div class='histroy_item'>
+                        <span class="line_before">2017-04 ~ 2019-03</span>
+                        <span class="line_after">大阪府立大学大学院 人間社会システム科学研究科 現代システム科学専攻 知識情報システム学分野 修士課程</span>
+                    </div>
+                    <div class='histroy_item'>
+                        <span class="line_before">2014-04 ~ 2017-03</span>
+                        <span class="line_after">大阪府立大学 現代システム科学域 知識情報システム学類</span>
+                    </div>
+                    <div class='histroy_item'>
+                        <span class="line_before">2011-04 ~ 2014-03</span>
+                        <span class="line_after">大阪府立鳳高等学校</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        準備中
+
+        <div id="interest" class="line_table_container">
+            <!-- 興味・ひとこと -->
+            <div class="line_content_container history_container">
+                <span class="line_before">興味</span>
+                <div class="interest_message">
+                    <div class="interest_message_line">ヒトは訓練することで【本に書いていること以上のことを自分で考えて読み取ること】ができる高次な思考能力を持っています．</div>
+                    <div class="interest_message_line">自然言語処理技術が高度に発達している現在であっても計算機システム（人工知能システム）は未だその知性の高みには到達できていません．</div>
+                    <div class="interest_message_line">この<span style="font-weight: 700">【書かれていないことを読み取るスキルやその育成に目掛けた計算機システムをいかにモデル化できるか？】</span>が，自分のライフワークとしてのリサーチクエスチョンと考えています．</div
+                </div>
+            </div>
+
+        </div>
 
     </div>
-
 </div>
 
 <style>
- .profiles {
+ #profiles {
+     margin-top: -2em;
+ }
+
+ #profile_content {
+     margin-left: 1em;
+ }
+
+ .line_table_container:first-child {
+     margin-top: 0em;
+ }
+
+ .line_table_container {
+     margin-top: 2em;
+ }
+ 
+ .line_content_container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 2.4em;
+     }
+
+ .line_before {
+     flex: 0 0 3em;
+     margin-right: 0.5em;
+     word-break: break-word;
+     font-weight: 700;
+ }
+ 
+ .line_after {
+     flex: 1 1 auto;
+     line-height: 1.2;
+     word-break: break-word;
+ }
+
+ .history_container {
+     align-items: flex-start;
+     margin-top: -1.2em;
+ }
+ 
+ .history_table {
+     display: block;
+     width: 100%;
+     margin-top: .7em;
+ }
+
+ .histroy_item {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 1em;
+     margin-bottom: .7em;
+ }
+
+ .histroy_item > .line_before {
+     flex: 0 1 8em;
+     margin-right: 1em;
+     word-break: break-word;
+     font-weight: 400;
+
+     text-indent: -1em;
+     padding-left: 1em;
 
  }
  
+ .histroy_item > .line_after {
+     flex: 1 1 30em;
+     word-break: break-word;
+ }
 
+ .interest_message {
+     background-color: #DCF6FF;
+     border-left: 0.5em solid #1919C3;
+     color: #191970;
+     font-size: 0.9rem;
+     box-shadow: 3px 3px 5px;
+     
+     margin-left: -1em;
+     margin-top: 3em;
+     width: 100%;
+     padding: 1em 0.9em;
+     line-height: 1.5em;
+ }
+ .interest_message_line {
+     text-indent:  1em;
+     padding-left: 0em;
+ }
 </style>

@@ -8,18 +8,111 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
     <div id="community_content">
         <div id="research_society_member">
             <!-- 所属学会 -->
+            <div class="community_set">
+                <div class="community_type">所属学会</div>
+                <div class="community_table">
+                    <!-- 上から順に新しいものを入れる -->
+                    <div class='community_item'>
+                        <span class="line_before">2021-10 ~ 現在</span>
+                        <a class="line_after society_link" href="https://www.sjst.jp/">日本理科教育学会</a>
+                    </div>
+                    <div class='community_item'>
+                        <span class="line_before">2019-06 ~ 現在</span>
+                        <a class="line_after society_link" href="https://www.acm.org/">Association for Computer Machinery</a>
+                    </div>
+                    <div class='community_item'>
+                        <span class="line_before">2019-05 ~ 現在</span>
+                        <a class="line_after society_link" href="https://www.jske.org/">日本感性工学会</a>
+                    </div>
+                    <div class='community_item'>
+                        <span class="line_before">2017-06 ~ 現在</span>
+                        <a class="line_after society_link" href="https://www.ai-gakkai.or.jp/">人工知能学会</a>
+                    </div>
+                    <div class='community_item'>
+                        <span class="line_before">2016-11 ~ 現在</span>
+                        <a class="line_after society_link" href="https://www.jsise.org/">教育システム情報学会</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="research_society_commity">
             <!-- 委員歴 -->
+            <div class="community_type">委員歴</div>
+            <div class="community_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='community_item'>
+                    <span class="line_before">2020</span>
+                    <span class="line_after"><a href="https://sites.google.com/view/yelsswakate/" class="society_link">教育・学習支援システム若手の会</a> プログラム幹事</span>
+                </div>
+                <div class='community_item'>
+                    <span class="line_before">2019 ~ 2020</span>
+                    <span class="line_after">人工知能学会 全国大会 大会委員（学生企画）</span>
+                </div>
+                <div class='community_item'>
+                    <span class="line_before">2017</span>
+                    <span class="line_after">大阪府立大学 異分野融合研究会 運営 </span>
+                </div>
+            </div>
         </div>
         <div id="other_society">
             <!-- その他のコミュニティ -->
+            <div class="community_type">その他</div>
+            <div class="community_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='community_item'>
+                    <span class="line_before">2019 ~ 現在</span>
+                    <span class="line_after">知的学習支援システム勉強会（ITS勉強会）</span>
+                </div>
+                <div class='community_item'>
+                    <span class="line_before">2018 ~ 現在</span>
+                    <span class="line_after">関西Lispユーザ会</span>
+                </div>
+            </div>
+            
         </div>
-        準備中
     </div>
 
 </div>
 
 <style>
+ #community_content {
+     margin-left: 1em;
+ }
 
+ .community_set {
+     margin-top: 1em;
+ }
+ 
+ .community_type {
+     font-weight: 700;
+     margin-bottom: .2em;
+ }
+
+ .community_table {
+     display: block;
+ }
+ .community_item {
+     margin-left: 2em;
+     display: flex;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 1.5em;
+    
+ }
+ 
+ .community_item > .line_before {
+     flex: 0 0 9em;
+ }
+ .community_item > .line_after {
+     flex: 1 1 auto;
+ }
+
+ .society_link {
+     text-decoration: none;
+ }
+
+ #research_society_commity, #other_society {
+     margin-top: 1em;
+ }
+ 
 </style>

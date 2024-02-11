@@ -12,13 +12,14 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
 
 <html lang="ja">
 	<head>
-		<BaseHead title={title} description={description} />
+        <BaseHead title={title} description={description} />
 		<style>
 		 main {
 			 width: calc(100%);
 			 max-width: 100%;
 			 margin: 0;
 		 }
+
 		 .hero-image {
 			 width: 100%;
              border: black 1px;
@@ -62,15 +63,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
 			 box-shadow: var(--box-shadow);
              transition: all .2s ease-in-out;
          }
-         .clear {
-             clear: both;
-         }
 		</style>
 	</head>
 
 	<body>
 		<Header />
-		<main>
+		<main id="product_systems">
 			<article>
 				<div class="hero-image">
 					{heroImage && <img width={510} height={255} src={SUBDIR_ADAPTIVE_URL(heroImage)} alt="" />}
