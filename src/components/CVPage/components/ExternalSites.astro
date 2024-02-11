@@ -6,11 +6,11 @@ import BackToTop from './BackToTop.astro';
 <div id="external_sites" class="cv_item">
     <h4 class="title_decoration cv_title">外部サイト</h4>
     <ul class="site_items">
-        <li>
-            Github ： <a href="https://github.com/dbym4820">https://github.com/dbym4820</a>
+        <li class="site_item_line">
+            <span class="line_before">Github：</span><a href="https://github.com/dbym4820">https://github.com/dbym4820</a>
         </li>
-        <li>
-            researchmap ： <a href="https://researchmap.jp/tomoki-aburatani">https://researchmap.jp/tomoki-aburatani</a>
+        <li class="site_item_line">
+            <span class="line_before">researchmap：</span><a href="https://researchmap.jp/tomoki-aburatani">https://researchmap.jp/tomoki-aburatani</a>
         </li>
     </ul>
 
@@ -46,6 +46,13 @@ import BackToTop from './BackToTop.astro';
      top: 0.6em; /*点の位置*/
      content: "";
      background: #1ec4e6; /*点の色*/
+ }
+
+ .site_item_line {
+     display: flex;
+ }
+ .site_item_line > .line_before {
+     flex: 0 0 7em;
  }
 
 </style>
