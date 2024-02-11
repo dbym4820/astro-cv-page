@@ -8,7 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
 
 const { pathname } = Astro.url;
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === SUBDIR_ADAPTIVE_URL(pathname) || href === SUBDIR_ADAPTIVE_URL(subpath?.[0]);
+const isActive = href === pathname || href === SUBDIR_ADAPTIVE_URL("/" + subpath?.[0]) || href === SUBDIR_ADAPTIVE_URL("/") ;
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
