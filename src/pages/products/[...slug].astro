@@ -4,10 +4,7 @@ import ProductPost from '../../layouts/ProductPost.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
 
 export async function getStaticPaths() {
-	const research_products = await getCollection('research_products');
-    const hobby_products = await getCollection('hobby_products');
-    const products = research_products.concat(hobby_products);
-	return products.map((prod) => {
+	return (await getCollection('products')).map((prod) => {
         return {
 		    params: { slug: prod.slug },
 		    props: prod,

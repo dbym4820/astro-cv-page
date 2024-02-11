@@ -1,6 +1,10 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
+import "@fontsource/atkinson-hyperlegible";
+import "@fontsource/atkinson-hyperlegible/400.css";
+import "@fontsource/atkinson-hyperlegible/400-italic.css";
+
 import '../styles/global.css';
 
 interface Props {
@@ -21,8 +25,9 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href={SUBDIR_ADAPTIVE_URL("images/fonts/atkinson-regular.woff")} as="font" type="font/woff" crossorigin />
-<link rel="preload" href={SUBDIR_ADAPTIVE_URL("images/fonts/atkinson-bold.woff")} as="font" type="font/woff" crossorigin />
+<!-- NPMでのインストーに変更（ルートディレクトリの動的変更に対応するため） -->
+<!-- <link rel="preload" href={SUBDIR_ADAPTIVE_URL("images/fonts/atkinson-regular.woff")} as="font" type="font/woff" crossorigin />
+     <link rel="preload" href={SUBDIR_ADAPTIVE_URL("images/fonts/atkinson-bold.woff")} as="font" type="font/woff" crossorigin /> -->
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

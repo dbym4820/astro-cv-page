@@ -5,13 +5,14 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
 import { getCollection } from 'astro:content';
 
-
-const research_products = (await getCollection('research_products')).filter(product => {
+const prods = await getCollection('products');
+const research_products = prods.filter(product => {
     return product.data.productType === 'research';
-});
-const hobby_products = (await getCollection('hobby_products')).filter(product => {
+});;
+const hobby_products = prods.filter(product => {
     return product.data.productType === 'hobby';
-});
+});;
+
 ---
 
 <!doctype html>
