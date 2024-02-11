@@ -12,6 +12,11 @@ const isActive = href === SUBDIR_ADAPTIVE_URL(pathname) || href === SUBDIR_ADAPT
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
+    <p>tag-href : {href}</p>
+    <p>tag-pathname : {pathname}</p>
+    <p>tag-subpath : {subpath}</p>
+    <p>tag-active : {isActive}</p>
+        
 	<slot />
 </a>
 <style>
