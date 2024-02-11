@@ -4,9 +4,10 @@ import type { HTMLAttributes } from 'astro/types';
 type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
+import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
 
 const { pathname } = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
+const subpath = SUBDIR_ADAPTIVE_URL(pathname.match(/[^\/]+/g));
 const isActive = href === pathname || href === '/' + subpath?.[0];
 ---
 
