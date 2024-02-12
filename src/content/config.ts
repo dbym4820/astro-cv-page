@@ -8,7 +8,7 @@ const products = defineCollection({
  		description: z.string(),
   		// Transform string to Date object
   		heroImage: z.string().optional(),
-        systemURL: z.string().optional(),
+        systemUrl: z.string().optional(),
         productType: z.string(),
   	}),
 });
