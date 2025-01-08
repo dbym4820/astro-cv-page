@@ -1,4 +1,4 @@
- ---
+---
 import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
 import BackToTop from './BackToTop.astro';
 ---
@@ -6,12 +6,113 @@ import BackToTop from './BackToTop.astro';
 <div id="educations" class="cv_item">
     <h4 class="title_decoration">教育歴</h4>
     <div id="education_content">
-        準備中  
+        <div class="education_set">
+            <div class="education_type">ティーチングアシスタント</div>
+            <div class="education_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='education_item'>
+                    <span class="period">2020-04 ~ 2021-03</span>
+                    <span class="subject">知識モデリング，プログラミング実践，ヒューマンコンピュータインタラクション</span>
+                    <span class="community">大阪府立大学 現代システム科学域</span>
+                </div>
+                <div class='education_item'>
+                    <span class="period">2019-04 ~ 2020-03</span>
+                    <span class="subject">知識モデリング，知識情報システム学演習III，プログラミング実践，初年次ゼミナール</span>
+                    <span class="community">大阪府立大学 現代システム科学域</span>
+                </div>
+                <div class='education_item'>
+                    <span class="period">2018-04 ~ 2019-03</span>
+                    <span class="subject">知識モデリング</span>
+                    <span class="community">大阪府立大学 現代システム科学域</span>
+                </div>
+                <div class='education_item'>
+                    <span class="period">2017-04 ~ 2018-03</span>
+                    <span class="subject">知識モデリング</span>
+                    <span class="community">大阪府立大学 現代システム科学域</span>
+                </div>
+            </div>
+        </div>
+        <div class="education_set">
+            <div class="education_type">教材作成</div>
+            <div class="education_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='education_item'>
+                    <span class="period">2025-02</span>
+                    <span class="subject">DRI検定（インフォマティクス検定）／問題解決とモデリング</span>
+                    <span class="community">香川大学</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education_set">
+            <div class="education_type">授業担当</div>
+            <div class="education_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='education_item'>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="education_set">
+            <div class="education_type">その他講師など</div>
+            <div class="education_table">
+                <!-- 上から順に新しいものを入れる -->
+                <div class='education_item'>
+                    <span class="period">2022-08-23</span>
+                    <span class="subject">吉野郡(東)メディア教育研究会 夏季研修会／プログラミング入門</span>
+                    <span class="community">奈良県吉野郡中学校教員 吉野郡(東)メディア教育研究会</span>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
     <BackToTop />
 </div>
 
 <style>
+ #education_content {
+     margin-left: 1em;
+ }
 
+ .education_set {
+     margin-top: 1em;
+ }
+ 
+ .education_type {
+     font-weight: 700;
+     margin-bottom: .2em;
+ }
+
+ .education_table {
+     display: block;
+ }
+ .education_item {
+     margin-left: 2em;
+     display: flex;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 1.5em;
+     
+ }
+ 
+ .education_item > .period {
+     flex: 0 0 10em;
+ }
+ .education_item > .subject {
+     flex: 1 2 25em;
+ }
+
+  .education_item > .community {
+     flex: 2 2 10em;
+  }
+
+ .education_item > .community:before {
+     content: '（';
+ }
+  .education_item > .community:after {
+     content: '）';
+ }
 </style>
