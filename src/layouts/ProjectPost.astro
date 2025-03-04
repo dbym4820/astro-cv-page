@@ -51,7 +51,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
              margin-top: 2em;
          }
          .project_description_main {
-             font-size: 1.2em;
+             font-size: 1em;
              line-height: 1.3;
          }
          
@@ -105,11 +105,16 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../consts';
                     <a class="system-link" href={systemUrl}>aaa</a>
                     <div class="clear"></div>
                     ) }
-					<slot />
 
                     <div class="hero-image">
 					    {heroImage && <img width={510} height={255} src={SUBDIR_ADAPTIVE_URL(heroImage)} alt="" />}
 				    </div>
+
+                    <hr />
+                    <div class="project_description">
+                        <h4>取り組み事例</h4><br />
+					    <slot />
+                    </div>
 
                     <hr />
                     <div id="related_works">

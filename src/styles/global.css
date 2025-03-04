@@ -234,3 +234,19 @@ hr {
 .back_to_top_link {
     
 }
+
+
+.indentContent {
+    margin-left: 2em;
+    margin-bottom: 4em;
+}
+
+.indentContentTitle {
+    text-decoration: underline;
+}
+
+.shadowImage {
+	display: block;
+	border-radius: 12px;
+	box-shadow: var(--box-shadow);
+}
