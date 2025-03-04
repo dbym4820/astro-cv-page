@@ -12,10 +12,11 @@ work_list: [
 
 <div class="indentContent">
 
-<h5 class="indentContentTitle">攻めのITと守りのITを連携するシステム開発のプロジェクト推進手法</h5>
-IPAが提唱しているDXを推進に目掛けたあるべきITシステムの捉え方を表す枠組みであえるスサノオフレーム．<br />
+<h5 class="indentContentTitle">攻めのITと守りのITを連携するDXのプロジェクト推進手法</h5>
+IPAが提唱しているDX(Degital Transformation)を推進に目掛けたあるべきITシステムの捉え方を表す枠組みであえるスサノオフレーム．<br />
 この枠組みでは，基幹システムなど安全性や頑健性を備えることが望ましい守りのITと，具体的な業務をこなすための小さなシステムのようなスピード感を持って改善していくのが望ましい攻めのITがあり，これらを分離しつつも，連携を図ることが大切と言われています．<br />
-特に大学組織におけるDX推進のための守りと攻めのITを連携する開発体制や方法論に関する研究です．<br /><br />
+特に大学組織におけるDX推進のための守りと攻めのITを連携する開発体制や方法論に関する研究です．<br />
+<a href="https://dx-labo.kagawa-u.ac.jp/">香川大学 DX推進研究センター</a>を中心とした取り組みです．<br /><br />
 
 <!-- <img width=360 src="../../images/project-images/02-organization_learning/dx_fujitsu.png" alt="" /> -->
 
