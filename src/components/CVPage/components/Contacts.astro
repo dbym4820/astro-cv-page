@@ -8,13 +8,17 @@ import BackToTop from './BackToTop.astro';
     <h4 class="title_decoration cv_title">連絡先</h4>
     <ul class="contact_items">
         <li class="contact_item_line">
-            <span class="line_before">Email（研究）：</span><span class="line_after">aburatani.tomoki [at] kagawa-u.ac.jp</span>
+            <span class="line_before">Email（大阪公立大学）：</span><span class="line_after">aburatani.tomoki [at] omu.ac.jp</span>
+        </li>
+        <li class="contact_item_line">
+            <span class="line_before">Email（香川大学）：</span><span class="line_after">aburatani.tomoki [at] kagawa-u.ac.jp</span>
         </li>
         <li class="contact_item_line">
             <span class="line_before">Email（個人）：</span><span class="line_after">aburatanitomoki [at] gmail.com</span>
         </li>
     </ul>
 
+    <div class="option_message">※基本的には大阪公立大学のメールアドレスまでご連絡をお願いいたします．</div>
     <BackToTop />
 </div>
 
@@ -38,7 +42,13 @@ import BackToTop from './BackToTop.astro';
  }
 
  .contact_item_line > .line_before {
-     flex: 0 0 6.5em;
+     flex: 0 0 15em;
+ }
+
+ .option_message {
+     margin-top: 1.5em;
+     margin-left: 2em;
+     color: gray;
  }
 
 

@@ -1,4 +1,4 @@
----
+ ---
 import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts';
 
 ---
@@ -17,11 +17,21 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
                 <span class="line_before">学位</span>
                 <span class="line_after">博士（情報学）</span>
             </div>
-            <div class="line_content_container">
+            <div class="line_content_container affiliation_container">
                 <span class="line_before">所属</span>
-                <span class="line_after">
-                    <a href="https://ici.kagawa-u.ac.jp/">香川大学 情報化推進統合拠点</a> DX推進研究センター 助教
-                </span>
+                <div class="affiliation_table">
+                    <div class="affiliation_item">
+                        <span class="line_after">
+                            <a href="https://www.omu.ac.jp/">大阪公立大学</a>大学院 <a href="https://www.omu.ac.jp/i/">情報学研究科</a> 学際情報学専攻 特任助教
+                        </span>
+                    </div>
+                    
+                    <div class="affiliation_item">
+                        <span class="line_after">
+                            <a href="https://ici.kagawa-u.ac.jp/">香川大学 情報化推進統合拠点</a> DX推進研究センター 客員研究員
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -32,7 +42,17 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
                 <div class="history_table">
                     <!-- 上から順に新しいものを入れる -->
                     <div class='histroy_item'>
-                        <span class="line_before">2024-04 ~ 現在</span>
+                        <span class="line_before">2025-04 ~ 現在</span>
+                        <span class="line_after"><a href="https://www.omu.ac.jp/">大阪公立大学</a>大学院 <a href="https://www.omu.ac.jp/i/">情報学研究科</a> 学際情報学専攻 特任助教</span>
+                    </div>
+
+                    <div class='histroy_item'>
+                        <span class="line_before">2025-04 ~ 現在</span>
+                        <span class="line_after"><a href="https://ici.kagawa-u.ac.jp/">香川大学 情報化推進統合拠点</a> DX推進研究センター 客員研究員</span>
+                    </div>
+
+                    <div class='histroy_item'>
+                        <span class="line_before">2024-04 ~ 2025-03</span>
                         <span class="line_after"><a href="https://ici.kagawa-u.ac.jp/">香川大学 情報化推進統合拠点</a> DX推進研究センター 助教</span>
                     </div>
 
@@ -110,7 +130,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
      flex-wrap: nowrap;
      word-break: normal;
      line-height: 2.4em;
-     }
+ }
 
  .line_before {
      flex: 0 0 3em;
@@ -125,6 +145,46 @@ import { SITE_TITLE, SITE_DESCRIPTION, SUBDIR_ADAPTIVE_URL } from '../../consts'
      word-break: break-word;
  }
 
+
+ .affiliation_container {
+     align-items: flex-start;
+     margin-top: 0em;
+ }
+
+ .affiliation_table {
+     display: block;
+     width: 100%;
+     margin-top: .7em;
+
+ }
+
+ .affiliation_item {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 1em;
+     margin-bottom: .7em;
+ }
+
+.affiliation_item > .line_before {
+     flex: 0 1 8em;
+     margin-right: 1em;
+     word-break: break-word;
+     font-weight: 400;
+
+     text-indent: -1em;
+     padding-left: 1em;
+
+ }
+ 
+ .affiliation_item > .line_after {
+     flex: 1 1 30em;
+     word-break: break-word;
+ }
+
+ 
+ 
  .history_container {
      align-items: flex-start;
      margin-top: -1.2em;
