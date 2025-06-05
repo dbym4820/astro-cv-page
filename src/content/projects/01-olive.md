@@ -5,7 +5,8 @@ heroImage: 'images/project-images/01-olive/meta-learning.png'
 projectType: 'research'
 systemUrl: ''
 work_list: [
-"油谷知岐, 瀬田和久, 林佑樹：学習経験の抽象化と汎化によるメタ学習プログラム, 教育システム情報学会誌, vol.42, no.2, to-appear, (2025).",
+"油谷知岐, 林佑樹, 瀬田和久：メタ学習プログラム実践データの質的比較分析, 第50回教育システム情報学会全国大会予稿集, to-appear, (2025).",
+"油谷知岐, 瀬田和久, 林佑樹：学習経験の抽象化と汎化によるメタ学習プログラム, 教育システム情報学会誌, vol.42, no.2, pp.243-260, (2025).",
 "油谷知岐, 瀬田和久, 林佑樹, 池田満：学習目標の内省を促すセマンティクスアウェアな知的学習支援システム, 電子情報通信学会論文誌D, vol.J104-D, no.8, pp.639-649, (2021).",
 "油谷知岐, 瀬田和久, 林祐樹, 池田満：プレゼン設計課題を通じた行間読み取り活動診断システムの開発, 電子情報通信学会論文誌D, vol.J102-D, no.4, pp.359-363, (2019).",
 ]
@@ -34,8 +35,14 @@ work_list: [
 <img class="" width=480 src="../../images/project-images/01-olive/gradual_meta-learning.png" alt="" />
 </div>
 
-
 <!------ 事例3 ------->
+<div class="indentContent">
+<h5 class="indentContentTitle">メタ学習プロセスの質的データ分析</h5>
+
+メタ認知知識を陽に作成する活動を課題化するメタ学習プログラムの実践データを対象に質的分析を適用し，プログラムの改善やメタ学習プロセスの洗練にめがける取り組みです．
+</div>
+
+<!------ 事例4 ------->
 <div class="indentContent">
 <h5 class="indentContentTitle">セマンティクスアウェアな教材の作成支援</h5>
 
@@ -45,7 +52,7 @@ work_list: [
 
 
 
-<!------ 事例4 ------->
+<!------ 事例5 ------->
 <div class="indentContent">
 <h5 class="indentContentTitle">教材セマンティクスの作成を機会としたメタ学習の知的支援</h5>
 

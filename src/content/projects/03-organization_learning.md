@@ -1,7 +1,7 @@
 ---
 title: '組織の自律的学習能力の成長を支援する知的システムの研究'
 description: 'ノウハウが分散した異なる組織同士で学びあったり，経営の過程で意識に上がりづらい自組織の能力を自覚して成長を続けることが持続可能な組織運営には大切です．従来の知識データベースやナレッジマネジメントでは難しかった「簡単には目に見えない部分に目を向ける」活動や，これを自組織内で自律的にできるようになることで自走できる組織としていくことに目掛け，学習支援の観点からシステムを検討しています．'
-heroImage: 'images/project-images/02-organization_learning/dx_fujitsu.png'
+heroImage: 'images/project-images/03-organization_learning/dx_fujitsu.png'
 projectType: 'research'
 systemUrl: ''
 work_list: [
@@ -17,7 +17,7 @@ IPAが提唱しているDX(Degital Transformation)を推進に目掛けたある
 特に大学組織におけるDX推進のための守りと攻めのITを連携する開発体制や方法論に関する研究です．<br />
 <a href="https://dx-labo.kagawa-u.ac.jp/">香川大学 DX推進研究センター</a>を中心とした取り組みです．<br /><br />
 
-<!-- <img width=360 src="../../images/project-images/02-organization_learning/dx_fujitsu.png" alt="" /> -->
+<!-- <img width=360 src="../../images/project-images/03-organization_learning/dx_fujitsu.png" alt="" /> -->
 
 </div>
 
