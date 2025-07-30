@@ -276,23 +276,28 @@ import BackToTop from './BackToTop.astro';
             <ul class="work_table">
                 <!-- 上から順に新しいものを入れる -->
                 <li class='work_item'>
-                    2025年4月 - 2029年3月／日本学術振興会 科学研究費助成事業（基金）, 基盤研究（B）, 「セマンティクスアウェアな知識創造活動基盤に基づく高次思考スキル支援モデルの確立」, 課題番号：25K03237, 分担者
+                    <span class="period">2025-04 ~ 2029-03</span>
+                    <span class="subject">日本学術振興会 科学研究費助成事業（基金）, 基盤研究（B）, 「セマンティクスアウェアな知識創造活動基盤に基づく高次思考スキル支援モデルの確立」, 課題番号：25K03237, 研究分担者</span>
                 </li>
                 <li class='work_item'>
-                    2024年7月 - 2026年3月／日本学術振興会 科学研究費助成事業（基金）, 研究活動スタート支援, 「学習経験の抽象化と汎化によるメタ学習支援システム」, 課題番号：24K22761, 研究代表者
+                    <span class="period">2024-07 ~ 2026-03</span>
+                    <span class="subject">日本学術振興会 科学研究費助成事業（基金）, 研究活動スタート支援, 「学習経験の抽象化と汎化によるメタ学習支援システム」, 課題番号：24K22761, 研究代表者</span>
                 </li>
             </ul>
             <div style="margin-top:10px; margin-left:10px; text-decoration:underline;">その他</div>
             <ul class="work_table">
                 <!-- 上から順に新しいものを入れる -->
                 <li class='work_item'>
-                    2025年7月 - 2026年3月／大阪公立大学 戦略的研究推進事業, 若手研究者支援, 「セマンティクスアウェアな引き継ぎ資料の作成を機会とした潜在的な継承要件の抽出⽀援システムの開発」, 課題番号：OMU-SRPP2025_YR20, 研究代表者
+                    <span class="period">2025-07 ~ 2026-03</span>
+                    <span class="subject">大阪公立大学 戦略的研究推進事業, 若手研究者支援, 「セマンティクスアウェアな引き継ぎ資料の作成を機会とした潜在的な継承要件の抽出⽀援システムの開発」, 課題番号：OMU-SRPP2025_YR20, 1000千円, 研究代表者</span>
                 </li>
                 <li class='work_item'>
-                    2024年7月 - 2025年3月／香川大学 研究推進事業（次世代研究創生）, 研究活動スタート支援, 「学習経験の抽象化と汎化によるメタ学習支援システム」, 課題番号：24K0D009, 研究代表者
+                    <span class="period">2024-07 ~ 2025-03</span>
+                    <span class="subject">香川大学 研究推進事業（次世代研究創生）, 研究活動スタート支援, 「学習経験の抽象化と汎化によるメタ学習支援システム」, 課題番号：24K0D009, 450千円, 研究代表者</span>
                 </li>
                 <li class='work_item'>
-                    2021年10月 - 2022年3月／国立研究開発法人科学技術振興機構（JST） 次世代研究者挑戦的研究プログラム リゾーム型研究人材育成プログラム, 「学習方略の経験学習支援フレームワークに関する研究」, 管理番号：RP2130314, 研究代表者
+                    <span class="period">2021-10 ~ 2022-03</span>
+                    <span class="subject">国立研究開発法人科学技術振興機構（JST） 次世代研究者挑戦的研究プログラム リゾーム型研究人材育成プログラム, 「学習方略の経験学習支援フレームワークに関する研究」, 管理番号：RP2130314, 130千円, 研究代表者</span>
                 </li>
             </ul>
         </div>
@@ -332,9 +337,23 @@ import BackToTop from './BackToTop.astro';
 
  ol.work_table > .work_item {
      list-style-type: decimal !important;
-
  }
 
+ #grants  .work_item {
+     display: flex;
+     flex-wrap: nowrap;
+     word-break: normal;
+     line-height: 1.5em;
+ }
+ 
+ li.work_item > .period {
+     flex: 0 1 10em;
+ }
+
+ li.work_item > .subject {
+     flex: 1 2;
+ }
+ 
  ol.work_table > li:before {
      width: 0px !important;
  }
