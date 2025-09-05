@@ -37,6 +37,11 @@ const projs = await getCollection('projects');
              height: 4em;
              text-align: right;
          }
+
+         .page_abstract {
+             height: 150%;
+             margin-bottom: 4em;
+         }
          
 		 ul {
 			 display: flex;
@@ -103,6 +108,13 @@ const projs = await getCollection('projects');
 			<section>
                 <h3 class="project-group research-project">研究プロジェクト</h3>
                 <div class="development_notification">※本ページは現在準備中です</div>
+
+                <div class="page_abstract">
+                    以下は，現在取り組んでいる研究プロジェクトの例です．<br />
+                    特定のタスクやトピックの内容に入り込んだレベルのメタ認知知識を計算機システムとヒトがどちらも扱えるようにする方法を模索する取り組みが中心です．<br />
+                    この他のプロジェクトについては，<a href="https://kshci-lab.net/projects">瀬田・林・油谷研究室のWebサイト</a>を参照してください．
+                </div>
+                
 				<ul>
 					{
 					projs.map((project, index) => (
